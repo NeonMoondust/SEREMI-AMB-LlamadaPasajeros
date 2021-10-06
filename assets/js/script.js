@@ -34,8 +34,19 @@ function cambioDeValores() {
             case 3: document.getElementById('segundo-numero').innerHTML = (a.value != "") ? (isNaN(a.value)) ? "000" : (a.value.length == 1) ? "00" + a.value : (a.value.length == 2) ? "0" + a.value : a.value : "000";
         }
     }
+    primer_letra_input.focus();
 }
 
 boton.onclick = cambioDeValores;
-
-
+primer_letra_input.addEventListener("keydown", function(e){
+    if (e.code === "Enter"){cambioDeValores()}
+});
+segunda_letra_input.addEventListener("keydown", function(e){
+    if (e.code === "Enter"){cambioDeValores()}
+});
+primer_numero_input.addEventListener("keydown", function(e){
+    if (e.code === "Enter"){cambioDeValores()}
+});
+segundo_numero_input.addEventListener("keydown", function(e){
+    if (e.code === "Enter"){cambioDeValores()}
+});
