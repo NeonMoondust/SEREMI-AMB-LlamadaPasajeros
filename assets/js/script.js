@@ -28,9 +28,9 @@ function cambioDeValores() {
     for (var i = 0 ; i < input.length; i++){
         var a = input[i];
         switch(i){
-            case 0: document.getElementById('primera-letra').innerHTML = (a.value != "") ? (isNaN(a.value)) ? (a.value.length == 1) ? a.value : "A" : "A": "A";
+            case 0: document.getElementById('primera-letra').innerHTML = (a.value != "") ? (isNaN(a.value)) ? (a.value.length == 1) ? a.value.toUpperCase() : "A" : "A": "A";
             case 1: document.getElementById('primer-numero').innerHTML = (a.value != "") ? (isNaN(a.value)) ? "000" : (a.value.length == 1) ? "00" + a.value : (a.value.length == 2) ? "0" + a.value : a.value : "000";
-            case 2: document.getElementById('segunda-letra').innerHTML = (a.value != "") ? (isNaN(a.value)) ? (a.value.length == 1) ? a.value : "A" : "A": "A";
+            case 2: document.getElementById('segunda-letra').innerHTML = (a.value != "") ? (isNaN(a.value)) ? (a.value.length == 1) ? a.value.toUpperCase() : "A" : "A": "A";
             case 3: document.getElementById('segundo-numero').innerHTML = (a.value != "") ? (isNaN(a.value)) ? "000" : (a.value.length == 1) ? "00" + a.value : (a.value.length == 2) ? "0" + a.value : a.value : "000";
         }
     }

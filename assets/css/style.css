@@ -1,8 +1,31 @@
 /*Normalize------*/
 body,h1,h2,h3,h4,h5,p,section,article,div,nav,footer,ul,li,ol{margin: 0;padding: 0;}
 /*Normalize------*/
+body{
+  background-color:honeydew;
+}
+
+.titulo{
+  border-bottom: solid #000 5px;
+  box-shadow: 0px 5px 0 #404040;
+}
+img{
+  margin-top: 1.5rem;
+}
+.logo{
+  margin-left: 1rem;
+  display: inline-block;
+}
+
+.logo-2{
+  margin-left: 15rem;
+  display: inline-block;
+}
 h1 {
+  display: inline-block;
     margin-top: 2rem;
+    width: 100%;
+    padding-bottom: 2.5rem;
 }
 h3{
     margin-top: 2rem;
@@ -10,7 +33,7 @@ h3{
 
 hr{
     opacity: 1;
-    margin: 5rem 5rem 0px;
+    margin: 2rem 5rem 0px;
     border-top: 4px solid;
 }
 
@@ -18,6 +41,10 @@ h2{
     margin-top: 5rem;
     border: solid #000 3px;
     /* font-size: 100px; */
+}
+
+input{
+  background-color: honeydew;
 }
 
 .ingreso-letra{
@@ -30,8 +57,20 @@ h2{
     width: 40%;
     display: inline-block;
 }
-button{
-    margin-top: 6rem;
+
+button {
+    transition: all .15s linear 0s;
+
+    margin-top: 5rem;
     width: 100%;
-    height: 50px;
+    height: 4rem;
+    background-color: #8F8B8B;
+    
+    text-transform: uppercase;
+    color: #000;
+    font-family: arial;
+    letter-spacing: 1px;
+    
+    box-shadow: 0px 6px 0 #404040;
+    text-decoration: none;
 }
